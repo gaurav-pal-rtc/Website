@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SteelCraft &amp; Aluminium Works | 3D Japani Steel Chowkhats &amp; Window Frames</title>
+  <title>Balaji Enterprises | 3D Japani Steel Chowkhats &amp; Aluminium Windows</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -104,33 +104,15 @@
 </head>
 <body class="min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-950">
 
-  <!-- Top Customization & GitHub Helper Bar -->
-  <div class="bg-amber-500/10 border-b border-amber-500/30 text-amber-200 text-xs px-4 py-2 relative z-40">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <div class="flex items-center gap-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-        <span><strong>3D Interactive Edition:</strong> Drag the 3D Chowkhat &amp; Window models below, customize your shop details, and download the updated <code class="bg-slate-900/80 px-1.5 py-0.5 rounded text-amber-300">index.html</code> for GitHub.</span>
-      </div>
-      <div class="flex items-center gap-2">
-        <button type="button" onclick="toggleModal('customizerModal', true)" class="px-2.5 py-1 rounded bg-amber-500 text-slate-950 font-semibold hover:bg-amber-400 transition">
-          Edit Shop Details
-        </button>
-        <button type="button" onclick="toggleModal('githubModal', true)" class="px-2.5 py-1 rounded bg-slate-800 border border-slate-600 text-slate-100 font-medium hover:bg-slate-700 transition">
-          GitHub Setup Guide &amp; Download
-        </button>
-      </div>
-    </div>
-  </div>
-
   <!-- Main Sticky Navigation -->
   <header class="sticky top-0 z-30 bg-slate-950/85 backdrop-blur-md border-b border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-orange-600 flex items-center justify-center text-slate-950 font-extrabold text-lg shadow-lg shadow-amber-500/25 transform hover:rotate-6 transition">
-          3D
+        <div id="navShopLogo" class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-orange-600 flex items-center justify-center text-slate-950 font-extrabold text-lg shadow-lg shadow-amber-500/25 transform hover:rotate-6 transition">
+          BE
         </div>
         <div>
-          <h1 id="navShopName" class="text-base sm:text-lg font-extrabold tracking-tight text-white">Vishwakarma Aluminium &amp; Japani Steel</h1>
+          <h1 id="navShopName" class="text-base sm:text-lg font-extrabold tracking-tight text-white">Balaji Enterprises</h1>
           <p id="navShopTagline" class="text-xs text-slate-400">Precision Chowkhats, Sliding Windows &amp; Architectural Sections</p>
         </div>
       </div>
@@ -263,7 +245,7 @@
       <div>
         <span class="text-xs font-bold uppercase tracking-wider text-amber-400">3D Interactive Product Showcase</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Chowkhats, Windows &amp; Fabrication Catalog</h2>
-        <p class="text-sm text-slate-400 mt-1">Hover or touch cards for 3D depth effect, click "Preview in 3D" to load any frame above, or add to your quote.</p>
+        <p class="text-sm text-slate-400 mt-1">Hover or touch cards for 3D depth effect, click "View in 3D" to load any frame above, or add to your quote.</p>
       </div>
 
       <!-- Filter & Search Controls -->
@@ -479,10 +461,10 @@
       <div class="lg:col-span-5 metallic-card rounded-2xl p-6 space-y-5">
         <div>
           <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Workshop &amp; Showroom</span>
-          <h3 id="contactShopName" class="text-xl font-extrabold text-white mt-1">Vishwakarma Aluminium &amp; Japani Steel</h3>
-          <p id="contactShopAddress" class="text-sm text-slate-300 mt-1">Main Industrial Road, Near Timber &amp; Hardware Market</p>
+          <h3 id="contactShopName" class="text-xl font-extrabold text-white mt-1">Balaji Enterprises</h3>
+          <p id="contactShopAddress" class="text-sm text-slate-300 mt-1">Banjarawala Chowk, Near Durga Mata Mandir, Banjarawala, Dehradun</p>
           <p class="text-sm text-amber-400 font-semibold mt-2">
-            Phone / WhatsApp: <span id="contactShopPhone">+91 98765 43210</span>
+            Phone / WhatsApp: <span id="contactShopPhone">+91 8630293806</span>
           </p>
         </div>
 
@@ -509,79 +491,13 @@
   <footer class="mt-auto border-t border-slate-800 bg-slate-950 py-6 px-4 sm:px-6 text-xs text-slate-400">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>
-        &copy; <span id="footerYear">2026</span> <span id="footerShopName" class="text-slate-200 font-semibold">Vishwakarma Aluminium &amp; Japani Steel</span>. 3D Edition ready for GitHub Pages.
+        &copy; <span id="footerYear">2026</span> <span id="footerShopName" class="text-slate-200 font-semibold">Balaji Enterprises</span>. All rights reserved.
       </div>
-      <div class="flex gap-4">
-        <button type="button" onclick="toggleModal('customizerModal', true)" class="hover:text-amber-400 transition">Customize Shop Info</button>
-        <button type="button" onclick="toggleModal('githubModal', true)" class="hover:text-amber-400 transition">GitHub Setup Guide</button>
+      <div class="text-slate-500">
+        Japani Steel Chowkhats &bull; Aluminium Sliding Windows &bull; Custom Fabrication
       </div>
     </div>
   </footer>
-
-  <!-- Modal 1: Customize Shop Details -->
-  <div id="customizerModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="metallic-card rounded-2xl max-w-lg w-full p-6 border border-slate-700 shadow-2xl">
-      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-        <h3 class="text-lg font-extrabold text-white">Customize Your Shop Details</h3>
-        <button type="button" onclick="toggleModal('customizerModal', false)" class="text-slate-400 hover:text-white text-sm font-bold px-2 py-1">Close</button>
-      </div>
-      <div class="space-y-4 my-4 text-sm">
-        <div>
-          <label for="inputShopName" class="block text-xs font-semibold text-slate-300 mb-1">Shop / Business Name</label>
-          <input id="inputShopName" type="text" value="Vishwakarma Aluminium & Japani Steel" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white" />
-        </div>
-        <div>
-          <label for="inputShopTagline" class="block text-xs font-semibold text-slate-300 mb-1">Tagline / Specialty</label>
-          <input id="inputShopTagline" type="text" value="Precision Chowkhats, Sliding Windows & Architectural Sections" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white" />
-        </div>
-        <div>
-          <label for="inputShopPhone" class="block text-xs font-semibold text-slate-300 mb-1">Phone / WhatsApp Number (with country code)</label>
-          <input id="inputShopPhone" type="text" value="+91 98765 43210" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white" />
-        </div>
-        <div>
-          <label for="inputShopAddress" class="block text-xs text-slate-300 mb-1">Workshop / Market Address</label>
-          <input id="inputShopAddress" type="text" value="Main Industrial Road, Near Timber & Hardware Market" class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white" />
-        </div>
-      </div>
-      <div class="flex justify-end gap-2 pt-3 border-t border-slate-800">
-        <button type="button" onclick="toggleModal('customizerModal', false)" class="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 text-xs font-semibold">Cancel</button>
-        <button type="button" onclick="saveShopCustomization()" class="px-4 py-2 rounded-xl bg-amber-500 text-slate-950 text-xs font-bold">Apply to Website</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2: GitHub Pages Setup & HTML Export -->
-  <div id="githubModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="metallic-card rounded-2xl max-w-2xl w-full p-6 border border-slate-700 shadow-2xl max-h-[90vh] overflow-y-auto">
-      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-        <div>
-          <span class="text-xs font-bold uppercase text-amber-400">Update Your Live GitHub Site</span>
-          <h3 class="text-lg font-extrabold text-white">Replace index.html with This 3D Version</h3>
-        </div>
-        <button type="button" onclick="toggleModal('githubModal', false)" class="text-slate-400 hover:text-white text-sm font-bold px-2 py-1">Close</button>
-      </div>
-
-      <div class="space-y-3 my-4 text-xs sm:text-sm text-slate-300">
-        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
-          <div class="font-bold text-white">Step 1: Download or Copy This New 3D <code class="text-amber-400">index.html</code></div>
-          <p class="text-slate-400 mt-1">Click below to download the new 3D <code class="text-slate-200">index.html</code> file or copy its code.</p>
-          <div class="flex flex-wrap gap-2 mt-3">
-            <button type="button" onclick="downloadHtmlFile()" class="px-3.5 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition">
-              Download index.html
-            </button>
-            <button type="button" onclick="copyFullHtmlSource()" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold text-xs transition">
-              Copy Full HTML Code
-            </button>
-          </div>
-        </div>
-
-        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
-          <div class="font-bold text-white">Step 2: Upload &amp; Replace on GitHub</div>
-          <p class="text-slate-400 mt-1">Open your <code class="text-amber-300">Website</code> repository in Safari, tap <strong>Add file &rarr; Upload files</strong>, choose this new <code class="text-slate-200">index.html</code> file, and tap <strong>Commit changes</strong>. GitHub Pages will automatically replace your old file in ~60 seconds!</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Toast Notification -->
   <div id="toastMessage" class="fixed bottom-5 right-5 z-50 hidden px-4 py-3 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs sm:text-sm shadow-xl">
@@ -589,15 +505,13 @@
   </div>
 
   <script>
-    // Shop configuration state
     const shopConfig = {
-      name: 'Vishwakarma Aluminium & Japani Steel',
+      logoInitials: 'BE',
+      name: 'Balaji Enterprises',
       tagline: 'Precision Chowkhats, Sliding Windows & Architectural Sections',
-      phone: '+91 98765 43210',
-      address: 'Main Industrial Road, Near Timber & Hardware Market'
+      phone: '+91 8630293806',
+      address: 'Banjarawala Chowk, Near Durga Mata Mandir, Banjarawala, Dehradun'
     };
-
-    // Catalog items with authentic Japani steel & aluminium specs
     const catalogProducts = [
       {
         id: 'prod_double_chowkhat',
@@ -679,6 +593,17 @@
       }
     ];
 
+    function applyShopConfig() {
+      document.getElementById('navShopLogo').textContent = shopConfig.logoInitials;
+      document.getElementById('navShopName').textContent = shopConfig.name;
+      document.getElementById('navShopTagline').textContent = shopConfig.tagline;
+      document.getElementById('contactShopName').textContent = shopConfig.name;
+      document.getElementById('contactShopAddress').textContent = shopConfig.address;
+      document.getElementById('contactShopPhone').textContent = shopConfig.phone;
+      document.getElementById('footerShopName').textContent = shopConfig.name;
+      document.title = `${shopConfig.name} | Japani Steel Chowkhats & Aluminium Windows`;
+    }
+
     let activeCategory = 'all';
     let quoteBasket = [
       {
@@ -722,7 +647,6 @@
       threeRenderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       host.appendChild(threeRenderer.domElement);
 
-      // Studio Industrial Lighting
       const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
       threeScene.add(ambientLight);
 
@@ -759,7 +683,6 @@
 
       build3DModel('chowkhat');
 
-      // Pointer drag rotation + wheel zoom
       let isDragging = false;
       let prevX = 0;
       let prevY = 0;
@@ -800,7 +723,6 @@
         if (threeRootGroup && autoRotate3D && !isDragging) {
           threeRootGroup.rotation.y += 0.0065;
         }
-        // Smooth sliding window animation
         if (slidingPaneLeft && slidingPaneRight) {
           const targetLeft = windowSlideOpen ? -0.15 : -0.62;
           const targetRight = windowSlideOpen ? 0.15 : 0.62;
@@ -823,7 +745,6 @@
       }
 
       if (mode === 'chowkhat') {
-        // 3D Double-Pattam Japani Steel Door Chowkhat (Left Jamb, Right Jamb, Top Head + Double Rebate Step + 6 Holdfast Lugs)
         const leftOuter = new THREE.Mesh(new THREE.BoxGeometry(0.24, 3.4, 0.34), frameMaterial);
         leftOuter.position.set(-1.1, 0, 0);
         const leftRebate = new THREE.Mesh(new THREE.BoxGeometry(0.14, 3.3, 0.18), frameMaterial);
@@ -839,14 +760,12 @@
         const topRebate = new THREE.Mesh(new THREE.BoxGeometry(2.04, 0.14, 0.18), frameMaterial);
         topRebate.position.set(0, 1.50, 0.08);
 
-        // Bottom tie rod (transport tie-bar on steel chowkhats)
         const bottomTie = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 2.2, 12), accentHoldfastMaterial);
         bottomTie.rotation.z = Math.PI / 2;
         bottomTie.position.set(0, -1.65, 0);
 
         threeRootGroup.add(leftOuter, leftRebate, rightOuter, rightRebate, topHead, topRebate, bottomTie);
 
-        // 6 Heavy Z-Holdfast anchor lugs (3 on each side)
         [-1.15, 0, 1.15].forEach(yPos => {
           const lugL = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.08, 0.08), accentHoldfastMaterial);
           lugL.position.set(-1.4, yPos, 0);
@@ -855,7 +774,6 @@
           threeRootGroup.add(lugL, lugR);
         });
       } else if (mode === 'sliding') {
-        // 3D 3-Track Aluminium Sliding Window Frame + Animated Sliding Glass Shutters
         const outerTop = new THREE.Mesh(new THREE.BoxGeometry(3.1, 0.2, 0.38), frameMaterial);
         outerTop.position.set(0, 1.25, 0);
         const outerBot = new THREE.Mesh(new THREE.BoxGeometry(3.1, 0.2, 0.38), frameMaterial);
@@ -866,21 +784,16 @@
         outerR.position.set(1.45, 0, 0);
         threeRootGroup.add(outerTop, outerBot, outerL, outerR);
 
-        // Left Sliding Glass Pane
         slidingPaneLeft = new THREE.Group();
         const paneLGlass = new THREE.Mesh(new THREE.BoxGeometry(1.38, 2.26, 0.05), glassMaterial);
-        const paneLBorder = new THREE.Mesh(new THREE.BoxGeometry(1.44, 2.32, 0.08), accentHoldfastMaterial);
-        paneLBorder.material = frameMaterial;
         slidingPaneLeft.add(paneLGlass);
         slidingPaneLeft.position.set(-0.62, 0, 0.07);
 
-        // Right Sliding Glass Pane
         slidingPaneRight = new THREE.Group();
         const paneRGlass = new THREE.Mesh(new THREE.BoxGeometry(1.38, 2.26, 0.05), glassMaterial);
         slidingPaneRight.add(paneRGlass);
         slidingPaneRight.position.set(0.62, 0, -0.07);
 
-        // Center interlock mullion bars
         const mullionL = new THREE.Mesh(new THREE.BoxGeometry(0.09, 2.3, 0.09), accentHoldfastMaterial);
         mullionL.position.set(0.68, 0, 0);
         slidingPaneLeft.add(mullionL);
@@ -891,7 +804,6 @@
 
         threeRootGroup.add(slidingPaneLeft, slidingPaneRight);
       } else {
-        // 3D Japani Steel Window Chowkhat with Integrated Safety Grill Bars
         const winTop = new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.22, 0.3), frameMaterial);
         winTop.position.set(0, 1.3, 0);
         const winBot = new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.22, 0.3), frameMaterial);
@@ -902,7 +814,6 @@
         winR.position.set(1.3, 0, 0);
         threeRootGroup.add(winTop, winBot, winL, winR);
 
-        // Horizontal & vertical 12mm square safety grill bars
         [-0.65, 0, 0.65].forEach(pos => {
           const hBar = new THREE.Mesh(new THREE.BoxGeometry(2.4, 0.07, 0.07), accentHoldfastMaterial);
           hBar.position.set(0, pos, 0);
@@ -1365,56 +1276,9 @@
 
     function sendWhatsAppInquiry() {
       const msg = buildInquiryMessage();
-      const digits = (shopConfig.phone || '').replace(/[^0-9]/g, '') || '919876543210';
+      const digits = (shopConfig.phone || '').replace(/[^0-9]/g, '') || '918630293806';
       const url = `https://wa.me/${digits}?text=${encodeURIComponent(msg)}`;
       window.open(url, '_blank', 'noopener,noreferrer');
-    }
-
-    function toggleModal(modalId, show) {
-      const el = document.getElementById(modalId);
-      if (!el) return;
-      if (show) {
-        el.classList.remove('hidden');
-      } else {
-        el.classList.add('hidden');
-      }
-    }
-
-    function saveShopCustomization() {
-      shopConfig.name = (document.getElementById('inputShopName').value || shopConfig.name).trim();
-      shopConfig.tagline = (document.getElementById('inputShopTagline').value || shopConfig.tagline).trim();
-      shopConfig.phone = (document.getElementById('inputShopPhone').value || shopConfig.phone).trim();
-      shopConfig.address = (document.getElementById('inputShopAddress').value || shopConfig.address).trim();
-
-      document.getElementById('navShopName').textContent = shopConfig.name;
-      document.getElementById('navShopTagline').textContent = shopConfig.tagline;
-      document.getElementById('contactShopName').textContent = shopConfig.name;
-      document.getElementById('contactShopAddress').textContent = shopConfig.address;
-      document.getElementById('contactShopPhone').textContent = shopConfig.phone;
-      document.getElementById('footerShopName').textContent = shopConfig.name;
-      document.title = `${shopConfig.name} | 3D Japani Steel Chowkhats & Aluminium Windows`;
-
-      toggleModal('customizerModal', false);
-      showToast('Shop details updated on the website!');
-    }
-
-    function downloadHtmlFile() {
-      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'index.html';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-      showToast('Downloaded 3D index.html ready for GitHub Pages!');
-    }
-
-    function copyFullHtmlSource() {
-      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-      copyTextToClipboard(htmlContent, 'Full 3D index.html code copied! Paste it into your GitHub repository.');
     }
 
     function scrollToSection(id) {
@@ -1436,6 +1300,7 @@
     }
 
     window.addEventListener('DOMContentLoaded', () => {
+      applyShopConfig();
       init3DScene();
       setBlueprintView('chowkhat');
       renderCatalog();
